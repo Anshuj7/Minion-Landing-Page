@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Landing Page</title>
+<link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+	
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ewert&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section>
+		<!---- FOR NAVIGATION MENU ---->
+		<nav class="menu-bar">
+			<!---- LOGO ---->
+			<a href="index1.html" class="aj_logo">The Minions</a>
+			
+			<!---- MENU BAR ---->
+			<ul class="menu-bar-ul">
+				<li class="menu-bar-li"><a href="index.html" id="hme">Home</a></li>
+				<li class="menu-bar-li"><a href="index.html" id="hme">About Us</a></li>
+				<li class="menu-bar-li"><a href="index.html" id="hme">Contact</a></li>
+				<li class="menu-bar-li"><a href="index.html" id="hme">Blog</a></li>
+			</ul>
+		</nav>
+		
+		<div class="minion">
+		<div class="body">
+			<div class="eyes">
+				<div class="eye">
+					<div class="ball"></div>
+				</div>
+				<div class="eye">
+					<div class="ball"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+		<div class="txt">
+		<div class="txtHead">
+			<h1>Hey People &#33;</h1>
+		</div>	
+		<div class="txtDes">
+			<p>Great things are coming!</p>
+			<div id="container">
+  				<div class="button" id="button-5">
+    			<div id="translate"></div>
+    			<a href="#" class="btn_a">Contact Me</a>
+  				</div>
+			</div>
+		</div>
+	</div>
+	</section>	
+	
+	<div class="soc_sec">
+		<div class="text_soc">
+			<p>While we are busy making jolly content for you, check out our socials!</p>
+		</div>
+		<div class="soc_icons">
+			<ul>
+  					<li>
+    					<a class="facebook" href="#">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+      						<i class="fa fa-facebook" aria-hidden="true"></i>
+    					</a>
+  					</li>
+  					<li>
+						<a class="twitter" href="#">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  	<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+				 </li>
+				  <li>
+						<a class="instagram" href="#">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+					  </li>
+					  <li>
+						<a class="google" href="#">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <i class="fa fa-google" aria-hidden="true"></i>
+						</a>
+					  </li>
+					</ul>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<p>&copy; 2020 by <a href="index1.html">Anshu Joshi</a>. Proudly Created with <a href="https://www.adobe.com/in/products/dreamweaver.html">Adobe Dreamweaver v21.0</a></p>
+	</div>
+	
+	<script>
+		var ball = document.getElementsByClassName("ball");
+		document.onmousemove = function(){
+			var x =event.clientX*100.5/window.innerWidth+"%";
+			var y = event.clientY *85 / window.innerHeight + "%";
+			
+			for(var i=0;i<2;i++){
+				ball[i].style.left = x/2;
+				ball[i].style.top = y / 2;
+				ball[i].style.transform="translate("+x+","+y+")";
+			}
+		}
+	</script>
+<body>
+</body>
+</html>
